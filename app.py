@@ -45,7 +45,7 @@ def predict():
         return render_template('index.html', prediction_text='Air Quality Index in your area is {}'.format(output))
 
 if __name__=='__main__':
-        app.run(debug=True)
+    app.run(debug=True)
     
 
 
