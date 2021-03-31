@@ -11,9 +11,9 @@ from flask import Flask,request,render_template,jsonify,url_for
 
 # In[2]:
 
-
-app=Flask(__name__)
 model=pickle.load(open('model.pkl','rb'))
+app=Flask(__name__)
+
 
 
 # In[3]:
