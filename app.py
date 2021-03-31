@@ -7,7 +7,8 @@
 import pickle
 import numpy as np
 from flask import Flask,request,render_template,jsonify,url_for
-
+from sklearn.preprocessing import StandardScaler
+scaler=StandardScaler()
 
 # In[2]:
 
@@ -38,8 +39,9 @@ def predict():
         sus=float(request.form['sus_windspeed'])
     
         input_var=[temp,pres,hum,ws,vis,sus]
-        final_input=[np.array(input_var)]
-        prediction = model.predict(final_input)
+        scl_input=scaler.transform([input_var])
+        
+        prediction = model.predict(scl_input)
         output=round(prediction[0],2)
         
         return render_template('index.html', prediction_text='Air Quality Index in your area is {}'.format(output))
