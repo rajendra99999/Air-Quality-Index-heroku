@@ -7,8 +7,7 @@
 import pickle
 import numpy as np
 from flask import Flask,request,render_template,jsonify,url_for
-from sklearn.preprocessing import StandardScaler
-scaler=StandardScaler()
+
 
 # In[2]:
 
@@ -37,7 +36,9 @@ def predict():
         ws=float(request.form['wind_speed'])
         vis=float(request.form['avg_visibility'])
         sus=float(request.form['sus_windspeed'])
-    
+         
+        from sklearn.preprocessing import StandardScaler
+        scaler=StandardScaler()
         input_var=[temp,pres,hum,ws,vis,sus]
         scl_input=scaler.transform([input_var])
         final_input=np.array(scl_input)
