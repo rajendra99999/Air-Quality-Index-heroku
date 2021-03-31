@@ -89,9 +89,6 @@ openpyxl==3.0.7
 opt-einsum==3.3.0
 packaging==20.9
 pandas>=0.19
-pandas-datareader==0.9.0
-pandas-profiling==2.11.0
-pandas-visual-analysis==0.0.4
 pandocfilters==1.4.3
 parso==0.8.1
 patsy==0.5.1
@@ -146,4 +143,3 @@ webencodings==0.5.1
 Werkzeug==1.0.1
 widgetsnbextension==3.5.1
 wrapt==1.12.1
-xlrd==2.0.1
