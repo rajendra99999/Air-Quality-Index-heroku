@@ -37,11 +37,10 @@ def predict():
         vis=float(request.form['avg_visibility'])
         sus=float(request.form['sus_windspeed'])
          
-        from sklearn.preprocessing import StandardScaler
-        scaler=StandardScaler()
+        
         input_var=[temp,pres,hum,ws,vis,sus]
-        scl_input=scaler.fit_transform([input_var])
-        final_input=np.array(scl_input)
+       
+        final_input=np.array([input_var])
         prediction = model.predict(final_input)
         output=round(prediction[0],2)
         
