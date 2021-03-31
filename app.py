@@ -41,7 +41,7 @@ def predict():
         input_var=[temp,pres,hum,ws,vis,sus]
         scl_input=scaler.transform([input_var])
         final_input=[np.array(scl_input)]
-        prediction = model.predict(scl_input)
+        prediction = model.predict(final_input)
         output=round(prediction[0],2)
         
         return render_template('index.html', prediction_text='Air Quality Index in your area is {}'.format(output))
