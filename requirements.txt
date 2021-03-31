@@ -148,7 +148,6 @@ testpath==0.4.4
 tf-estimator-nightly==2.5.0.dev2021032401
 tf-nightly==2.5.0.dev20210323
 threadpoolctl==2.1.0
-tifffile==2021.3.17
 tornado==6.1
 tqdm==4.59.0
 traitlets==5.0.5
