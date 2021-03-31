@@ -40,7 +40,7 @@ def predict():
     
         input_var=[temp,pres,hum,ws,vis,sus]
         scl_input=scaler.transform([input_var])
-        
+        final_input=[np.array(scl_input)]
         prediction = model.predict(scl_input)
         output=round(prediction[0],2)
         
