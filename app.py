@@ -33,7 +33,7 @@ def predict():
         temp=int(request.form['avg_temp'])
         pres=int(request.form['atm_pres'])
         hum=int(request.form['humidity'])
-        ws=float(required.form['wind_speed'])
+        ws=float(request.form['wind_speed'])
         vis=float(request.form['avg_visibility'])
         sus=float(request.form['sus_windspeed'])
     
