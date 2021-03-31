@@ -40,7 +40,7 @@ def predict():
         from sklearn.preprocessing import StandardScaler
         scaler=StandardScaler()
         input_var=[temp,pres,hum,ws,vis,sus]
-        scl_input=scaler.transform([input_var])
+        scl_input=scaler.fit_transform([input_var])
         final_input=np.array(scl_input)
         prediction = model.predict(final_input)
         output=round(prediction[0],2)
