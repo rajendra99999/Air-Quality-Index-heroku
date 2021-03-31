@@ -29,7 +29,6 @@ dash-renderer==1.9.0
 dash-table==4.11.2
 decorator==4.4.2
 defusedxml==0.6.0
-dtale==1.40.1
 entrypoints==0.3
 et-xmlfile==1.0.1
 Flask==1.1.2
@@ -87,7 +86,6 @@ nbconvert==6.0.7
 nbformat==5.1.2
 nest-asyncio==1.5.1
 networkx==2.5
-nltk==3.5
 notebook==6.2.0
 numpy==1.19.5
 oauthlib==3.1.0
@@ -135,7 +133,6 @@ sniffio==1.2.0
 squarify==0.4.3
 statsmodels==0.12.2
 strsimpy==0.2.0
-sweetviz==2.0.9
 tabulate==0.8.9
 tangled-up-in-unicode==0.0.7
 tb-nightly==2.5.0a20210323
