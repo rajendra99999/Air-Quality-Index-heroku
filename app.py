@@ -11,7 +11,7 @@ from flask import Flask,request,render_template,jsonify,url_for
 
 # In[2]:
 
-model=pickle.load(open('model.pkl','rb'))
+model=pickle.load(open('Random Forest Model.pkl','rb'))
 app=Flask(__name__)
 
 
