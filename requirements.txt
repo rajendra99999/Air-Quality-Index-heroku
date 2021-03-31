@@ -150,7 +150,6 @@ tf-nightly==2.5.0.dev20210323
 threadpoolctl==2.1.0
 tornado==6.1
 tqdm==4.59.0
-traitlets==5.0.5
 typing-extensions==3.7.4.3
 urllib3==1.26.3
 visions==0.6.0
